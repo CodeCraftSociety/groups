@@ -8,130 +8,229 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- HEADER -->
-  <header>
-    <div class="logo-container">
-      <!-- Logo Placeholder: Use an actual image of the described penguin/flames -->
-      <img src="logo.jpg" alt="CodeCraft Society Logo" class="logo" />
-      <div class="logo-text">
-        <h1>CODECRAFT SOCIETY</h1>
+  <!-- HEADER / NAVIGATION -->
+  <header id="home">
+    <div class="header-content">
+      <!-- Round Logo (left) -->
+      <img src="logo.jpg" alt="CodeCraft Society Logo" class="logo rounded-logo" />
+      <!-- Title & Tagline (right) -->
+      <div class="title-area">
+        <h1 class="site-title">CODECRAFT SOCIETY</h1>
         <p class="tagline">Where Skills &amp; Collaboration Ignite</p>
       </div>
     </div>
 
     <nav>
+      <a href="#home">Home</a>
       <a href="#skills">Skill Groups</a>
-      <a href="#roadmap">Roadmaps</a>
+      <a href="#roadmap">Resources</a>
+      <a href="#join">Join</a>
     </nav>
   </header>
 
-  <!-- INTRO SECTION (OPTIONAL) -->
+  <!-- INTRO SECTION -->
   <section class="intro">
     <h2>Welcome to CodeCraft Society</h2>
     <p>
-      We’re a passionate community of learners, creators, and innovators.
-      Our unique logo—a stylized penguin split into dark and light halves,
-      surrounded by blazing flames—symbolizes our blend of <strong>technology,
-      creativity, and the fire of collaboration.</strong> Join a skill group,
-      follow the roadmaps, and let’s build something amazing—together!
+      CodeCraft Society is a thriving community of passionate developers, designers, and tech enthusiasts dedicated to fostering innovation and skill-building.  
+        Our goal is to provide a collaborative environment where aspiring and experienced professionals can share knowledge, build projects, and grow together.  
+        Whether you're delving into AI, mastering web development, exploring cybersecurity, or creating stunning UI/UX designs, this is the place to enhance your craft.  
+        Join us as we shape the future of technology—one crafted line of code at a time.
     </p>
   </section>
 
   <!-- SKILL GROUPS SECTION -->
   <section class="section" id="skills">
     <h2>Our Skill Groups</h2>
-    <p>Below are our dedicated groups. Each focuses on a unique tech or creative field—pick yours and jump right in!</p>
+    <p>
+      Explore the domains below, each with its own WhatsApp community for real-time discussions, 
+      shared resources, and hands-on collaboration. Pick the one(s) that resonate with you, and 
+      let’s build amazing things together!
+    </p>
 
     <div class="skills-grid">
       <!-- WebCrafters -->
       <div class="skill-card">
         <h3>🌐 WebCrafters</h3>
         <p>Focus: Web Development (HTML, CSS, JS, frameworks, full-stack)</p>
-        <a href="https://chat.whatsapp.com/LPMIdaNx5mSAQuGWQ28BXQ" target="_blank">Join WhatsApp</a>
+        <!-- Roadmap Link -->
+        <a href="pdfs/web-crafters-roadmap.pdf" target="_blank" class="external-link pdf-link">
+          View Roadmap
+        </a>
+        <!-- Join Link -->
+        <a href="https://chat.whatsapp.com/LPMIdaNx5mSAQuGWQ28BXQ" target="_blank" class="external-link">
+          Join WhatsApp
+        </a>
       </div>
 
       <!-- AI Crafters -->
       <div class="skill-card">
         <h3>🤖 AI Crafters</h3>
         <p>Focus: AI &amp; Machine Learning (Python, ML frameworks, deep learning)</p>
-        <a href="https://chat.whatsapp.com/G1PzM5Atwau2LwbnprIVDm" target="_blank">Join WhatsApp</a>
+        <a href="pdfs/ai-crafters-roadmap.pdf" target="_blank" class="external-link pdf-link">
+          View Roadmap
+        </a>
+        <a href="https://chat.whatsapp.com/G1PzM5Atwau2LwbnprIVDm" target="_blank" class="external-link">
+          Join WhatsApp
+        </a>
       </div>
 
       <!-- AppCrafters -->
       <div class="skill-card">
         <h3>📱 AppCrafters</h3>
         <p>Focus: Mobile App Development (Android, iOS, React Native, Flutter)</p>
-        <a href="https://chat.whatsapp.com/Ey3Qzz8slGbIxZsS6uYUzE" target="_blank">Join WhatsApp</a>
+        <a href="pdfs/app-crafters-roadmap.pdf" target="_blank" class="external-link pdf-link">
+          View Roadmap
+        </a>
+        <a href="https://chat.whatsapp.com/Ey3Qzz8slGbIxZsS6uYUzE" target="_blank" class="external-link">
+          Join WhatsApp
+        </a>
       </div>
 
       <!-- CloudCrafters -->
       <div class="skill-card">
         <h3>☁️ CloudCrafters</h3>
         <p>Focus: DevOps &amp; Cloud (AWS, Azure, Docker, CI/CD pipelines)</p>
-        <a href="https://chat.whatsapp.com/HKaMY61CgW06Wf4piRm3Lh" target="_blank">Join WhatsApp</a>
+        <a href="pdfs/cloud-crafters-roadmap.pdf" target="_blank" class="external-link pdf-link">
+          View Roadmap
+        </a>
+        <a href="https://chat.whatsapp.com/HKaMY61CgW06Wf4piRm3Lh" target="_blank" class="external-link">
+          Join WhatsApp
+        </a>
       </div>
 
       <!-- CyberCrafters -->
       <div class="skill-card">
         <h3>🔒 CyberCrafters</h3>
         <p>Focus: Cybersecurity (network security, ethical hacking, forensics)</p>
-        <a href="https://chat.whatsapp.com/HdmvYBKpepm3R1GNTXSyOw" target="_blank">Join WhatsApp</a>
+        <a href="pdfs/cyber-crafters-roadmap.pdf" target="_blank" class="external-link pdf-link">
+          View Roadmap
+        </a>
+        <a href="https://chat.whatsapp.com/HdmvYBKpepm3R1GNTXSyOw" target="_blank" class="external-link">
+          Join WhatsApp
+        </a>
       </div>
 
       <!-- DataCrafters -->
       <div class="skill-card">
         <h3>📊 DataCrafters</h3>
         <p>Focus: Data Science &amp; Analytics (Python, SQL, machine learning)</p>
-        <a href="https://chat.whatsapp.com/GZlEjL68vj4Av1czoeu0YI" target="_blank">Join WhatsApp</a>
+        <a href="pdfs/data-crafters-roadmap.pdf" target="_blank" class="external-link pdf-link">
+          View Roadmap
+        </a>
+        <a href="https://chat.whatsapp.com/GZlEjL68vj4Av1czoeu0YI" target="_blank" class="external-link">
+          Join WhatsApp
+        </a>
       </div>
 
       <!-- CodeCrafters -->
       <div class="skill-card">
         <h3>⚡ CodeCrafters</h3>
         <p>Focus: Competitive Programming (algorithms, problem-solving, contests)</p>
-        <a href="https://chat.whatsapp.com/CKxVaLPkLeo4K1XEdiymJX" target="_blank">Join WhatsApp</a>
+        <a href="pdfs/code-crafters-roadmap.pdf" target="_blank" class="external-link pdf-link">
+          View Roadmap
+        </a>
+        <a href="https://chat.whatsapp.com/CKxVaLPkLeo4K1XEdiymJX" target="_blank" class="external-link">
+          Join WhatsApp
+        </a>
       </div>
 
       <!-- GameCrafters -->
       <div class="skill-card">
         <h3>🎮 GameCrafters</h3>
         <p>Focus: Game Development (Unity, Unreal, 2D/3D, multiplayer)</p>
-        <a href="https://chat.whatsapp.com/Lt0fmCc3s1u13FmLrCsgUx" target="_blank">Join WhatsApp</a>
+        <a href="pdfs/game-crafters-roadmap.pdf" target="_blank" class="external-link pdf-link">
+          View Roadmap
+        </a>
+        <a href="https://chat.whatsapp.com/Lt0fmCc3s1u13FmLrCsgUx" target="_blank" class="external-link">
+          Join WhatsApp
+        </a>
       </div>
 
       <!-- DesignCrafters -->
       <div class="skill-card">
         <h3>🎨 DesignCrafters</h3>
         <p>Focus: UI/UX &amp; Product Design (Figma, Adobe XD, user research)</p>
-        <a href="https://chat.whatsapp.com/KI7greZmTKW3N2z0J4dM07" target="_blank">Join WhatsApp</a>
+        <a href="pdfs/design-crafters-roadmap.pdf" target="_blank" class="external-link pdf-link">
+          View Roadmap
+        </a>
+        <a href="https://chat.whatsapp.com/KI7greZmTKW3N2z0J4dM07" target="_blank" class="external-link">
+          Join WhatsApp
+        </a>
       </div>
 
       <!-- MotionCrafters -->
       <div class="skill-card">
         <h3>📸 MotionCrafters</h3>
         <p>Focus: Video Editing &amp; Motion Graphics (Premiere Pro, After Effects)</p>
-        <a href="https://chat.whatsapp.com/HgeAET6eXqJCDpliEojeSj" target="_blank">Join WhatsApp</a>
+        <a href="pdfs/motion-crafters-roadmap.pdf" target="_blank" class="external-link pdf-link">
+          View Roadmap
+        </a>
+        <a href="https://chat.whatsapp.com/HgeAET6eXqJCDpliEojeSj" target="_blank" class="external-link">
+          Join WhatsApp
+        </a>
       </div>
     </div>
   </section>
 
   <!-- ROADMAP SECTION -->
   <section class="section" id="roadmap">
-    <h2>Roadmaps &amp; Resources</h2>
+    <h2>General Roadmap &amp; Resources</h2>
     <p>
-      Each group follows a structured Beginner → Intermediate → Advanced path.
-      <strong>Download our official PDF</strong> to see milestones, recommended tools,
-      and project ideas. Stay active, complete challenges, and share progress!
+      Each group also shares a unified vision for growth. 
+      <strong>Download our official PDF</strong> to see overarching milestones, 
+      recommended tools, and project ideas spanning all disciplines.
     </p>
-    <a class="pdf-link" href="#" target="_blank">
-      📄 Download Roadmap PDF
+    <a class="pdf-link external-link" href="pdfs/master-roadmap.pdf" target="_blank">
+      📄 Download Master Roadmap
+    </a>
+  </section>
+
+  <!-- JOIN / COMMUNITY SECTION -->
+  <section class="section" id="join">
+    <h2>Our Main Community</h2>
+    <p>
+      Beyond specific skill groups, connect with everyone in our main CodeCraft Society hub. 
+      Get announcements, event updates, and general support. Join us and be part of the bigger 
+      conversation!
+    </p>
+    <!-- Replace with your main group link (WhatsApp, Telegram, Discord, etc.) -->
+    <a class="pdf-link external-link" href="https://chat.whatsapp.com/YourMainGroupLink" target="_blank">
+      🚀 Main Community
     </a>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2025 CodeCraft Society </p>
+    <p>© 2023 CodeCraft Society </p>
     <p class="footer-quote">“Let’s build something amazing—together!”</p>
   </footer>
+
+  <!-- JAVASCRIPT FOR SWIRL VANISH (EXTERNAL LINKS ONLY) -->
+  <script>
+    // Select all links that have class="external-link"
+    const externalLinks = document.querySelectorAll('.external-link');
+
+    externalLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        const hrefValue = link.getAttribute('href');
+
+        // We'll assume any link starting with "http" is external
+        // or if it points to a PDF path
+        if (hrefValue.startsWith('http') || hrefValue.endsWith('.pdf')) {
+          e.preventDefault();
+
+          // 1. Add swirl vanish animation to body
+          document.body.classList.add('swirl-vanish');
+
+          // 2. After animation ends (~1s), hide everything, then navigate
+          setTimeout(() => {
+            document.body.classList.add('hide-after-snap');
+            window.location.href = hrefValue;
+          }, 1000);
+        }
+      });
+    });
+  </script>
 </body>
 </html>
