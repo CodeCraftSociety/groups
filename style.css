@@ -1,215 +1,320 @@
-/* ==============================
-   CODECRAFT SOCIETY - STYLE.CSS
-   Dark theme with gold/orange accents
-   ============================== */
-
-/* Root color variables (optional) */
-:root {
-    --bg-color: #121212;        /* Main dark background */
-    --card-bg: #1f1f1f;         /* Card background */
-    --accent-color: #fa6400;    /* Flame-like accent (orange) */
-    --gold-color: #f5c945;      /* Gold accent for headings */
-    --text-color: #eee;         /* Light text */
-    --muted-text-color: #bbb;   /* Slightly muted text */
-    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    --transition-speed: 0.3s;
-  }
-  
-  /* Reset & Global Styles */
-  * {
-    margin: 0; 
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background: var(--bg-color);
-    color: var(--text-color);
-    line-height: 1.5;
-  }
-  a {
-    text-decoration: none;
-    color: var(--accent-color);
-    transition: color var(--transition-speed);
-  }
-  a:hover {
-    color: var(--gold-color);
-  }
-  
-  /* Header */
-  header {
-    background: #0a0a0a;
-    padding: 20px;
-    text-align: center;
-    position: relative;
-    box-shadow: var(--box-shadow);
-  }
-  .logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 15px;
-  }
-  .logo {
-    height: 80px;
-    width: auto;
-    margin-right: 15px;
-  }
-  .logo-text h1 {
-    font-size: 1.8rem;
-    color: var(--gold-color);
-    margin-bottom: 5px;
-  }
-  .tagline {
-    font-size: 0.95rem;
-    color: var(--muted-text-color);
-    margin-top: 5px;
-  }
-  nav {
-    margin-top: 10px;
-  }
-  nav a {
-    margin: 0 10px;
-    font-weight: 600;
-    color: var(--accent-color);
-  }
-  nav a:hover {
-    color: var(--gold-color);
-  }
-  
-  /* Intro Section (Optional) */
-  .intro {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    background: #1a1a1a;
-    box-shadow: var(--box-shadow);
-    border-radius: 6px;
-  }
-  .intro h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: var(--gold-color);
-  }
-  .intro p {
-    font-size: 1rem;
-    color: var(--text-color);
-  }
-  
-  /* Section Container */
-  .section {
-    max-width: 1200px;
-    margin: 20px auto;
-    background: #1a1a1a;
-    padding: 20px;
-    border-radius: 6px;
-    box-shadow: var(--box-shadow);
-  }
-  .section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: var(--gold-color);
-  }
-  .section p {
-    font-size: 1rem;
-    color: var(--text-color);
-    margin-bottom: 15px;
-  }
-  
-  /* Skills Grid */
-  .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-  }
-  .skill-card {
-    background: var(--card-bg);
-    padding: 15px;
-    border-radius: 6px;
-    box-shadow: var(--box-shadow);
-    transition: transform var(--transition-speed);
-  }
-  .skill-card:hover {
-    transform: translateY(-2px);
-  }
-  .skill-card h3 {
-    font-size: 1.2rem;
-    margin-bottom: 8px;
-    color: var(--gold-color);
-  }
-  .skill-card p {
-    font-size: 0.95rem;
-    color: var(--muted-text-color);
-    margin-bottom: 10px;
-  }
-  .skill-card a {
-    display: inline-block;
-    background: var(--accent-color);
-    color: #fff;
-    padding: 8px 12px;
-    border-radius: 4px;
-    font-size: 0.9rem;
-    transition: background var(--transition-speed);
-  }
-  .skill-card a:hover {
-    background: var(--gold-color);
-  }
-  
-  /* Roadmap Section */
-  #roadmap a.pdf-link {
-    display: inline-block;
-    margin-top: 10px;
-    background: var(--accent-color);
-    color: #fff;
-    padding: 8px 12px;
-    border-radius: 4px;
-    font-size: 0.9rem;
-    transition: background var(--transition-speed);
-  }
-  #roadmap a.pdf-link:hover {
-    background: var(--gold-color);
-  }
-  
-  /* Footer */
-  footer {
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-    font-size: 0.9rem;
-    color: var(--muted-text-color);
-  }
-  footer .footer-quote {
-    margin-top: 5px;
-    font-style: italic;
-    color: var(--accent-color);
-  }
-  
-  /* Responsive Breakpoints */
-  /* For smartphone screens up to ~600px */
-  @media (max-width: 600px) {
-    header {
-      padding: 15px;
-    }
-    .logo {
-      height: 60px;
-      margin-bottom: 10px;
-    }
-    .logo-text h1 {
-      font-size: 1.4rem;
-    }
-    nav a {
-      margin: 0 5px;
-    }
-    .intro, .section {
-      padding: 15px;
-      margin: 15px auto;
-    }
-    .section h2 {
-      font-size: 1.3rem;
-    }
-    .skills-grid {
-      grid-template-columns: 1fr; /* Single column for small screens */
-    }
-  }
-  
+/****************************************
+    * BASE STYLES & COLOR VARIABLES
+    ****************************************/
+    :root {
+        --dark-bg: #121212;
+        --card-bg: #1f1f1f;
+        --accent-color: #fa6400; /* Fiery orange */
+        --gold-color: #f5c945;   /* Gold accent */
+        --text-color: #eee;
+        --muted-text: #bbb;
+        --box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        --transition-speed: 0.4s;
+      }
+      
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: "Segoe UI", Tahoma, sans-serif;
+        color: var(--text-color);
+        line-height: 1.5;
+        overflow-x: hidden;
+      
+        /* Multi-color animated gradient background */
+        background: linear-gradient(
+          -45deg,
+          #fa6400,   /* Fiery Orange */
+          #f5c945,   /* Gold */
+          #2ec4b6,   /* Teal */
+          #6a4c93,   /* Purple */
+          #1a1a1a,   /* Dark Gray */
+          #0a0a0a    /* Near Black */
+        );
+        background-size: 600% 600%;
+        animation: bgGradient 16s ease infinite;
+      }
+      
+      a {
+        text-decoration: none;
+        color: var(--accent-color);
+        transition: color var(--transition-speed);
+      }
+      
+      a:hover {
+        color: var(--gold-color);
+      }
+      
+      /****************************************
+       * HEADER
+       ****************************************/
+      header {
+        background: rgba(0,0,0,0.6);
+        position: relative;
+        box-shadow: var(--box-shadow);
+        margin-bottom: 20px;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Logo on left, title area on right */
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+      }
+      
+      /* Logo: Rounded shape if .rounded-logo is used */
+      .logo {
+        height: 80px;
+        width: auto;
+        margin-right: 15px;
+      }
+      
+      .rounded-logo {
+        border-radius: 50%;
+        /* Optionally fix a size:
+           width: 80px; height: 80px; object-fit: cover; */
+      }
+      
+      .title-area {
+        text-align: right;
+      }
+      
+      .site-title {
+        font-size: 1.8rem;
+        color: var(--gold-color);
+      }
+      
+      .tagline {
+        font-size: 0.95rem;
+        color: var(--muted-text);
+        margin-top: 5px;
+      }
+      
+      /* Navigation below the header-content */
+      nav {
+        margin-top: 10px;
+      }
+      
+      nav a {
+        margin: 0 10px;
+        font-weight: 800;
+        color: var(--accent-color);
+      }
+      
+      /****************************************
+       * INTRO SECTION
+       ****************************************/
+      .intro {
+        max-width: 1200px;
+        margin: 0 auto 20px auto;
+        background: rgba(0,0,0,0.6);
+        box-shadow: var(--box-shadow);
+        border-radius: 6px;
+        padding: 20px;
+      }
+      
+      .intro h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: var(--gold-color);
+      }
+      
+      .intro p {
+        font-size: 1rem;
+        color: var(--text-color);
+      }
+      
+      /****************************************
+       * SECTION CONTAINER
+       ****************************************/
+      .section {
+        max-width: 1200px;
+        margin: 0 auto 20px auto;
+        background: rgba(0,0,0,0.6);
+        box-shadow: var(--box-shadow);
+        border-radius: 6px;
+        padding: 20px;
+      }
+      
+      .section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: var(--gold-color);
+      }
+      
+      .section p {
+        font-size: 1rem;
+        margin-bottom: 15px;
+        color: var(--text-color);
+      }
+      
+      /****************************************
+       * SKILLS GRID
+       ****************************************/
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+      }
+      
+      .skill-card {
+        background: var(--card-bg);
+        padding: 15px;
+        border-radius: 6px;
+        box-shadow: var(--box-shadow);
+        transition: transform var(--transition-speed);
+      }
+      
+      .skill-card:hover {
+        transform: translateY(-2px);
+      }
+      
+      .skill-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+        color: var(--gold-color);
+      }
+      
+      .skill-card p {
+        font-size: 0.95rem;
+        color: var(--muted-text);
+        margin-bottom: 10px;
+      }
+      
+      /* Space between multiple links inside the same skill card */
+      .skill-card a {
+        display: inline-block;
+        background: var(--accent-color);
+        color: #fff;
+        padding: 8px 12px;
+        border-radius: 4px;
+        font-size: 0.9rem;
+        transition: background var(--transition-speed);
+        margin-bottom: 6px; /* small vertical spacing */
+      }
+      
+      .skill-card a + a {
+        margin-left: 10px; /* horizontal spacing if on the same line */
+      }
+      
+      .skill-card a:hover {
+        background: var(--gold-color);
+        color: #000;
+      }
+      
+      /****************************************
+       * ROADMAP / JOIN LINKS
+       ****************************************/
+      .pdf-link {
+        /* Additional styling for PDF / Roadmap links if needed */
+      }
+      
+      /****************************************
+       * FOOTER
+       ****************************************/
+      footer {
+        text-align: center;
+        margin: 0 auto;
+        padding: 20px;
+        font-size: 0.9rem;
+        color: var(--muted-text);
+        background: rgba(0,0,0,0.6);
+        border-radius: 6px;
+        box-shadow: var(--box-shadow);
+      }
+      
+      .footer-quote {
+        margin-top: 5px;
+        font-style: italic;
+        color: var(--accent-color);
+      }
+      
+      /****************************************
+       * KEYFRAMES: BACKGROUND ANIMATION
+       ****************************************/
+      @keyframes bgGradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      
+      /****************************************
+       * KEYFRAMES: SWIRL VANISH
+       ****************************************/
+      @keyframes swirlVanish {
+        0% {
+          opacity: 1;
+          transform: scale(1) rotate(0deg);
+        }
+        30% {
+          transform: scale(1.2) rotate(15deg);
+          opacity: 0.7;
+        }
+        60% {
+          transform: scale(0.8) rotate(-10deg);
+          opacity: 0.4;
+        }
+        100% {
+          transform: scale(0.2) rotate(-90deg);
+          opacity: 0;
+        }
+      }
+      
+      /* Class that triggers swirl vanish */
+      .swirl-vanish {
+        animation: swirlVanish 1s forwards ease-in-out;
+      }
+      
+      /* After vanish, hide everything */
+      .hide-after-snap {
+        display: none !important;
+      }
+      
+      /****************************************
+       * RESPONSIVE BREAKPOINTS
+       ****************************************/
+      @media (max-width: 600px) {
+        .header-content {
+          flex-direction: column;
+          align-items: center;
+        }
+      
+        .logo {
+          height: 60px;
+          margin-bottom: 10px;
+        }
+      
+        .title-area {
+          text-align: center;
+          margin: 0;
+        }
+      
+        .site-title {
+          font-size: 1.4rem;
+        }
+      
+        nav a {
+          margin: 0 5px;
+        }
+      
+        .intro, .section {
+          margin: 10px;
+          padding: 15px;
+        }
+      
+        .skills-grid {
+          grid-template-columns: 1fr;
+        }
+      }
